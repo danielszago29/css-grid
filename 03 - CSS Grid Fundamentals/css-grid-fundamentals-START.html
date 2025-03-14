@@ -9,7 +9,31 @@
 </head>
 
 <body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+  </div>
+  <style>
+    .container{
+      display: grid; /*quando um elemento pai e transformado em display: grid todos os seus filhos tem o mesmo valor atribuido*/
+      grid-template-columns: 200px 500px;/*cada valor representa uma coluna*/ /*isso cria 2 colulas com 100px de largura ou qualquer valor que eu coloque*/
+      /*quando o valor é subistituedo por "auto" o item se ahjusta automaticamente*/
 
+      grid-template-rows: 200px 100px 400px;/*isso define a altura*/
+
+      gap:20px;/*cria um "vão" entre os elementos selecionados*/
+
+
+    }
+  </style>
 </body>
 
 </html>

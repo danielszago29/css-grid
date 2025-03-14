@@ -31,6 +31,11 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      /*grid-template-columns: 25% 25% 25% 25%; as porcentagens adicionam umas as outras alem de adicionarem o gap entre elas.  */
+      border: 10px solid ;
+      grid-template-columns: 1fr 1fr 1fr 1fr;/*1fr faz o item utilizar o restante do espaço automaticamente pode ser escalonado ex = 1 fr , 2fr */
+
+      /*height: ; */
     }
   </style>
 </body>

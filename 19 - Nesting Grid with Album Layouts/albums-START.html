@@ -99,7 +99,26 @@
   <style>
     .albums{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax());
+      grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+      gap: 20px;
+    }
+
+    .album__artwork{
+      width: 100%;
+      height: 100px;
+      border: 1px solid yellow;
+      
+    }
+
+    .album{
+      background: rgba(255, 255, 255, 0.15);
+      padding: 20px ;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 10px;
+      align-items: center;
+      color:#fff;
+      font-weight: 100;
     }
   </style>
 </body>
